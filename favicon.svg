@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00ff88;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00cc6f;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="128" height="128" fill="#0a0a0a" rx="24"/>
+  
+  <!-- Glow circle -->
+  <circle cx="64" cy="64" r="50" fill="none" stroke="#00ff88" stroke-width="1" opacity="0.15"/>
+  
+  <!-- Main design - Minimalist "T" shape -->
+  <g transform="translate(64, 64)">
+    <!-- Horizontal bar of T -->
+    <rect x="-30" y="-30" width="60" height="12" fill="url(#grad1)" rx="4"/>
+    <!-- Vertical bar of T -->
+    <rect x="-6" y="-30" width="12" height="60" fill="url(#grad1)" rx="4"/>
+    <!-- Accent dot (representing "I") -->
+    <circle cx="-30" cy="15" r="6" fill="#00ff88"/>
+  </g>
+  
+  <!-- Border -->
+  <rect width="128" height="128" fill="none" stroke="url(#grad1)" stroke-width="3" rx="24"/>
+</svg>

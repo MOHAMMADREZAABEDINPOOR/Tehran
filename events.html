@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Calendar - I Am Tehran</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="alternate icon" href="favicon.ico">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="events.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>I AM TEHRAN</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="comedy.html" class="nav-link">Comedy</a>
+                <a href="events.html" class="nav-link active">Events</a>
+                <a href="shop.html" class="nav-link">Shop</a>
+                <a href="press.html" class="nav-link">Press</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Calendar Section -->
+    <section class="calendar-section">
+        <div class="container">
+            <!-- Search and Controls -->
+            <div class="calendar-controls">
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search for events" id="event-search">
+                </div>
+                <div class="view-controls">
+                    <button class="btn btn-primary" id="find-events-btn">Find Events</button>
+                    <button class="view-option active" data-view="list">List</button>
+                    <button class="view-option" data-view="month">Month</button>
+                    <button class="view-option" data-view="day">Day</button>
+                </div>
+            </div>
+
+            <!-- Date Navigation -->
+            <div class="date-navigation">
+                <button class="nav-arrow" id="prev-period">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="current-period">
+                    <button class="today-btn" id="today-btn">Today</button>
+                    <h2 id="current-date-display">Now onwards</h2>
+                </div>
+                <button class="nav-arrow" id="next-period">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+
+            <!-- Calendar Grid -->
+            <div class="calendar-container" id="calendar-container">
+                <div class="calendar-grid-wrapper">
+            <div class="calendar-grid" id="calendar-grid">
+                <!-- Calendar will be populated by JavaScript -->
+            </div>
+        </div>
+            </div>
+
+            <!-- No Events Message -->
+            <div class="no-events-message">
+                <i class="fas fa-calendar"></i>
+                <p>There are no upcoming events.</p>
+            </div>
+
+            <!-- Latest Past Events -->
+            <div class="past-events-section">
+                <h2>Latest Past Events</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>I AM TEHRAN</h3>
+                    <p>Comedian • Spokesperson • Personality</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/iamtehran/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/TehranVonGhasri" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.youtube.com/user/tehrandc" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="comedy.html">Comedy</a></li>
+                        <li><a href="events.html">Events</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="press.html">Press</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 I Am Tehran. All Rights Reserved.</p>
+                <p>Website created by <a href="https://pimx.pages.dev" target="_blank">pimx</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - I Am Tehran</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="alternate icon" href="favicon.ico">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="shop.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>I AM TEHRAN</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="comedy.html" class="nav-link">Comedy</a>
+                <a href="events.html" class="nav-link">Events</a>
+                <a href="shop.html" class="nav-link active">Shop</a>
+                <a href="press.html" class="nav-link">Press</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Shop</h1>
+            <p>Official merchandise and exclusive items from I Am Tehran</p>
+        </div>
+    </section>
+
+    <!-- Shop Hero -->
+    <section class="shop-hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h2>Official Merchandise</h2>
+                    <p class="lead">
+                        Show your support and represent the I Am Tehran brand with our exclusive collection 
+                        of merchandise, apparel, and collectibles.
+                    </p>
+                    <p>
+                        From stylish apparel to unique accessories, each item is designed to reflect the 
+                        spirit and personality of Tehran. Quality materials, authentic designs, and 
+                        exclusive items you won't find anywhere else.
+                    </p>
+                </div>
+                <div class="hero-image">
+                    <div class="placeholder-image">
+                        <i class="fas fa-shopping-bag"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop Categories -->
+    <section class="shop-categories">
+        <div class="container">
+            <div class="section-header">
+                <h2>Shop Categories</h2>
+                <p>Browse our collection by category</p>
+            </div>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                    </div>
+                    <div class="category-content">
+                        <h3>Apparel</h3>
+                        <p>T-shirts, hoodies, and stylish clothing</p>
+                        <a href="#" class="btn btn-outline">Shop Now</a>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <div class="category-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-mug-hot"></i>
+                        </div>
+                    </div>
+                    <div class="category-content">
+                        <h3>Accessories</h3>
+                        <p>Mugs, bags, and lifestyle accessories</p>
+                        <a href="#" class="btn btn-outline">Shop Now</a>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <div class="category-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-compact-disc"></i>
+                        </div>
+                    </div>
+                    <div class="category-content">
+                        <h3>Media</h3>
+                        <p>CDs, DVDs, and digital content</p>
+                        <a href="#" class="btn btn-outline">Shop Now</a>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <div class="category-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-gift"></i>
+                        </div>
+                    </div>
+                    <div class="category-content">
+                        <h3>Collectibles</h3>
+                        <p>Limited edition items and memorabilia</p>
+                        <a href="#" class="btn btn-outline">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Filters -->
+    <section class="product-filters">
+        <div class="container">
+            <div class="filters-content">
+                <div class="filter-section">
+                    <h3>Filter by Category</h3>
+                    <div class="filter-options">
+                        <button class="filter-option active" data-filter="all">All Products</button>
+                        <button class="filter-option" data-filter="apparel">Apparel</button>
+                        <button class="filter-option" data-filter="accessories">Accessories</button>
+                        <button class="filter-option" data-filter="media">Media</button>
+                        <button class="filter-option" data-filter="collectibles">Collectibles</button>
+                    </div>
+                </div>
+                <div class="filter-section">
+                    <h3>Sort by</h3>
+                    <select class="sort-select">
+                        <option value="featured">Featured</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="rating">Customer Rating</option>
+                        <option value="newest">Newest</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Products</h2>
+                <p>Our most popular and exclusive items</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image" style="background: linear-gradient(135deg, #8e2de2 0%, #4a00e0 100%);">
+                        <div class="placeholder-image" style="background: none; font-size: 5rem;">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                        <div class="product-badge">Best Seller</div>
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <button class="add-to-cart-btn">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3>I Am Tehran T-Shirt</h3>
+                        <p class="product-description">Premium quality cotton t-shirt with the iconic I Am Tehran logo. Available in multiple sizes and colors.</p>
+                        <div class="product-price">
+                            <span class="current-price">$29.99</span>
+                            <span class="original-price">$39.99</span>
+                        </div>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-count">(127 reviews)</span>
+                        </div>
+                        <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- All Products -->
+    <section class="all-products" style="display: none;">
+        <div class="container">
+            <div class="section-header">
+                <h2>All Products</h2>
+                <p>Complete collection of I Am Tehran merchandise</p>
+            </div>
+            <div class="products-grid" id="all-products-grid">
+                <!-- Products will be populated by JavaScript -->
+            </div>
+            <div class="load-more">
+                <button class="btn btn-outline">Load More Products</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shopping Cart Sidebar -->
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Shopping Cart</h3>
+            <button class="close-cart" id="close-cart">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Cart items will be populated by JavaScript -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total: $<span id="cart-total">0.00</span></span>
+            </div>
+            <button class="btn btn-primary checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- Cart Overlay -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>I AM TEHRAN</h3>
+                    <p>Comedian • Spokesperson • Personality</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/iamtehran/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/TehranVonGhasri" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.youtube.com/user/tehrandc" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="comedy.html">Comedy</a></li>
+                        <li><a href="events.html">Events</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="press.html">Press</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 I Am Tehran. All Rights Reserved.</p>
+                <p>Website created by <a href="https://pimx.pages.dev" target="_blank">pimx</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

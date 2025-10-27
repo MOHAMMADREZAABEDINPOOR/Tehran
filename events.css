@@ -1,0 +1,341 @@
+/* Events Page - Calendar View Styles */
+
+/* Calendar Section */
+.calendar-section {
+    padding: 6rem 0 2rem 0;
+    background: #0a0a0a;
+    min-height: 100vh;
+}
+
+/* Calendar Controls */
+.calendar-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    background: #1a1a1a;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    border: 1px solid #2a2a2a;
+}
+
+.search-bar {
+    position: relative;
+    flex: 1;
+    max-width: 500px;
+}
+
+.search-bar i {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 0.75rem 1rem 0.75rem 3rem;
+    border: 2px solid #2a2a2a;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    background: #0f0f0f;
+    color: #e0e0e0;
+}
+
+.search-bar input:focus {
+    outline: none;
+    border-color: #00ff88;
+}
+
+.search-bar input::placeholder {
+    color: #666;
+}
+
+.view-controls {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.view-option {
+    padding: 0.75rem 1.5rem;
+    background: transparent;
+    border: 1px solid #2a2a2a;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    color: #e0e0e0;
+}
+
+.view-option.active,
+.view-option:hover {
+    background: #2a2a2a;
+    border-color: #00ff88;
+}
+
+/* Date Navigation */
+.date-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.nav-arrow {
+    width: 40px;
+    height: 40px;
+    background: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #e0e0e0;
+}
+
+.nav-arrow:hover {
+    background: #2a2a2a;
+    border-color: #00ff88;
+}
+
+.current-period {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.today-btn {
+    padding: 0.5rem 1rem;
+    background: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    color: #e0e0e0;
+}
+
+.today-btn:hover {
+    background: #2a2a2a;
+    border-color: #00ff88;
+}
+
+#current-date-display {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #e0e0e0;
+}
+
+/* Calendar Container */
+.calendar-container {
+    background: #1a1a1a;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 2rem;
+    border: 1px solid #2a2a2a;
+}
+
+.calendar-grid-wrapper {
+    overflow-x: auto;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1px;
+    background: #2a2a2a;
+    border: 1px solid #2a2a2a;
+    min-width: 700px;
+}
+
+.calendar-day-header {
+    background: #0f0f0f;
+    padding: 1rem;
+    text-align: center;
+    font-weight: 600;
+    color: #999;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+}
+
+.calendar-day {
+    background: #1a1a1a;
+    padding: 0.75rem;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    position: relative;
+}
+
+.calendar-day:hover {
+    background: #252525;
+}
+
+.calendar-day.empty {
+    background: #0f0f0f;
+    cursor: default;
+}
+
+.calendar-day.today {
+    background: #1a3a4a;
+}
+
+.calendar-day.has-event {
+    background: #2a2010;
+}
+
+.calendar-day.has-event::after {
+    content: '';
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 6px;
+    height: 6px;
+    background: #4054f0;
+    border-radius: 50%;
+}
+
+.day-number {
+    font-weight: 600;
+    color: #e0e0e0;
+    margin-bottom: 0.5rem;
+}
+
+.calendar-day.empty .day-number {
+    color: #555;
+}
+
+/* No Events Message */
+.no-events-message {
+    background: #1a1a1a;
+    padding: 3rem;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 3rem;
+    border: 1px solid #2a2a2a;
+}
+
+.no-events-message i {
+    font-size: 3rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.no-events-message p {
+    color: #999;
+    font-size: 1.125rem;
+    margin: 0;
+}
+
+/* Past Events Section */
+.past-events-section {
+    margin-top: 3rem;
+}
+
+.past-events-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #e0e0e0;
+    margin-bottom: 2rem;
+}
+
+/* Page Header Override */
+.page-header {
+    display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .calendar-controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-bar {
+        max-width: 100%;
+    }
+
+    .view-controls {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .date-navigation {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .current-period {
+        order: -1;
+        width: 100%;
+        justify-content: center;
+    }
+
+    #current-date-display {
+        font-size: 1.25rem;
+    }
+
+    .calendar-grid {
+        min-width: auto;
+        font-size: 0.875rem;
+    }
+
+    .calendar-day {
+        min-height: 70px;
+        padding: 0.5rem;
+    }
+
+    .calendar-day-header {
+        padding: 0.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .calendar-section {
+        padding: 1rem 0;
+    }
+
+    .calendar-controls {
+        padding: 1rem;
+    }
+
+    .view-controls {
+        width: 100%;
+    }
+
+    .view-option {
+        flex: 1;
+        padding: 0.5rem;
+        font-size: 0.875rem;
+    }
+
+    .calendar-container {
+        padding: 1rem;
+    }
+
+    .calendar-day {
+        min-height: 50px;
+        padding: 0.25rem;
+    }
+
+    .calendar-day-header {
+        padding: 0.5rem;
+        font-size: 0.75rem;
+    }
+
+    .day-number {
+        font-size: 0.875rem;
+    }
+}

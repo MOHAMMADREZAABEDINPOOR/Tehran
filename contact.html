@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - I Am Tehran</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="alternate icon" href="favicon.ico">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>I AM TEHRAN</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="comedy.html" class="nav-link">Comedy</a>
+                <a href="events.html" class="nav-link">Events</a>
+                <a href="shop.html" class="nav-link">Shop</a>
+                <a href="press.html" class="nav-link">Press</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Main Section -->
+    <section class="contact-main">
+        <div class="contact-layout">
+            <!-- Left Side - Image -->
+            <div class="contact-image-side">
+                <div class="contact-image-wrapper">
+                    <img src="https://www.iamtehran.com/wp-content/uploads/2020/03/personal_photo-23-1000x600-1.jpeg" alt="Tehran">
+                </div>
+                <div class="contact-image-overlay">
+                    <h1>Let's Connect</h1>
+                    <p>Contact me for bookings, inquiries, and collaborations</p>
+                </div>
+            </div>
+
+            <!-- Right Side - Form -->
+            <div class="contact-form-side">
+                <div class="contact-form-header">
+                    <h2>Contact Us</h2>
+                    <p>Fill out the form below and we'll get back to you within 24 hours</p>
+                </div>
+
+                <form class="contact-form" id="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+1 (234) 567-890">
+                        </div>
+                        <div class="form-group">
+                            <label for="event-date">Date of Event</label>
+                            <input type="date" id="event-date" name="event-date">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="event-type">Time Event Starts</label>
+                        <input type="time" id="event-type" name="event-type">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" placeholder="Tell us about your event or inquiry..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+
+                <!-- Contact Info Cards -->
+                <div class="contact-info-cards">
+                    <div class="info-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p><a href="mailto:hello@iamtehran.com">hello@iamtehran.com</a></p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-phone"></i>
+                        <h3>Phone</h3>
+                        <p><a href="tel:+1234567890">+1 (234) 567-890</a></p>
+                    </div>
+                </div>
+
+                <!-- Social Links -->
+                <div class="contact-social">
+                    <h3>Follow Me</h3>
+                    <div class="social-links-contact">
+                        <a href="https://www.instagram.com/iamtehran/" target="_blank" class="social-link-btn">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/TehranVonGhasri" target="_blank" class="social-link-btn">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://www.youtube.com/user/tehrandc" target="_blank" class="social-link-btn">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Old Contact Hero -->
+    <section class="contact-hero" style="display: none;">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h2>Let's Connect</h2>
+                    <p class="lead">
+                        Whether you're interested in booking a performance, collaborating on a project, 
+                        or simply want to say hello, I'd love to hear from you.
+                    </p>
+                    <p>
+                        From comedy shows to cultural events, from radio appearances to community projects - 
+                        let's work together to create something amazing that brings people together.
+                    </p>
+                </div>
+                <div class="hero-image">
+                    <div class="placeholder-image">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Methods -->
+    <section class="contact-methods">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get in Touch</h2>
+                <p>Choose the best way to reach me</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-content">
+                        <h3>Email</h3>
+                        <p>For general inquiries, collaborations, and media requests</p>
+                        <a href="mailto:hello@iamtehran.com" class="contact-link">hello@iamtehran.com</a>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-calendar-star"></i>
+                    </div>
+                    <div class="contact-content">
+                        <h3>Bookings</h3>
+                        <p>For event bookings, performances, and appearances</p>
+                        <a href="mailto:bookings@iamtehran.com" class="contact-link">bookings@iamtehran.com</a>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-microphone"></i>
+                    </div>
+                    <div class="contact-content">
+                        <h3>Media</h3>
+                        <p>For press inquiries, interviews, and media requests</p>
+                        <a href="mailto:media@iamtehran.com" class="contact-link">media@iamtehran.com</a>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-content">
+                        <h3>Phone</h3>
+                        <p>For urgent matters and immediate bookings</p>
+                        <a href="tel:+1234567890" class="contact-link">+1 (234) 567-890</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Form -->
+    <section class="reservation-form">
+        <div class="container">
+            <div class="section-header">
+                <h2>Reserve Now</h2>
+                <p>Book a table or reserve your spot for upcoming events</p>
+            </div>
+            <div class="form-container">
+                <form class="reservation-form-content" id="reservation-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="guests">Number of Guests</label>
+                            <select id="guests" name="guests" required>
+                                <option value="">Select number of guests</option>
+                                <option value="1">1 Guest</option>
+                                <option value="2">2 Guests</option>
+                                <option value="3">3 Guests</option>
+                                <option value="4">4 Guests</option>
+                                <option value="5">5 Guests</option>
+                                <option value="6">6 Guests</option>
+                                <option value="7">7 Guests</option>
+                                <option value="8">8 Guests</option>
+                                <option value="9">9 Guests</option>
+                                <option value="10">10+ Guests</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Preferred Date</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Preferred Time</label>
+                        <select id="time" name="time" required>
+                            <option value="">Select time</option>
+                            <option value="6:00 PM">6:00 PM</option>
+                            <option value="6:30 PM">6:30 PM</option>
+                            <option value="7:00 PM">7:00 PM</option>
+                            <option value="7:30 PM">7:30 PM</option>
+                            <option value="8:00 PM">8:00 PM</option>
+                            <option value="8:30 PM">8:30 PM</option>
+                            <option value="9:00 PM">9:00 PM</option>
+                            <option value="9:30 PM">9:30 PM</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="eventType">Event Type</label>
+                        <select id="eventType" name="eventType" required>
+                            <option value="">Select event type</option>
+                            <option value="comedy-show">Comedy Show</option>
+                            <option value="music-event">Music Event</option>
+                            <option value="special-event">Special Event</option>
+                            <option value="private-booking">Private Booking</option>
+                            <option value="corporate-event">Corporate Event</option>
+                            <option value="wedding">Wedding</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="specialRequests">Special Requests or Notes</label>
+                        <textarea id="specialRequests" name="specialRequests" rows="4" placeholder="Tell us about any special requirements, dietary restrictions, or other notes..."></textarea>
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="terms" name="terms" required>
+                            <span class="checkmark"></span>
+                            I agree to the <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a>
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary submit-btn">Send Reservation Request</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Reserve Section -->
+    <section class="why-reserve">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Reserve a Table?</h2>
+                <p>Advantages of making a reservation</p>
+            </div>
+            <div class="advantages-grid">
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div class="advantage-content">
+                        <h3>Guaranteed Seating</h3>
+                        <p>Ensure you have the best seats for the show with advance reservation</p>
+                    </div>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <div class="advantage-content">
+                        <h3>Special Perks</h3>
+                        <p>Reserved guests often receive special treatment and exclusive benefits</p>
+                    </div>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="advantage-content">
+                        <h3>Priority Service</h3>
+                        <p>Faster service and dedicated attention for reserved guests</p>
+                    </div>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="advantage-content">
+                        <h3>VIP Experience</h3>
+                        <p>Enhanced experience with premium seating and personalized service</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="contact-info">
+        <div class="container">
+            <div class="contact-info-content">
+                <div class="info-section">
+                    <h3>Office Hours</h3>
+                    <div class="hours-list">
+                        <div class="hours-item">
+                            <span class="day">Monday - Friday</span>
+                            <span class="time">9:00 AM - 6:00 PM</span>
+                        </div>
+                        <div class="hours-item">
+                            <span class="day">Saturday</span>
+                            <span class="time">10:00 AM - 4:00 PM</span>
+                        </div>
+                        <div class="hours-item">
+                            <span class="day">Sunday</span>
+                            <span class="time">Closed</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-section">
+                    <h3>Response Time</h3>
+                    <div class="response-info">
+                        <div class="response-item">
+                            <span class="type">Email Inquiries</span>
+                            <span class="time">24-48 hours</span>
+                        </div>
+                        <div class="response-item">
+                            <span class="type">Booking Requests</span>
+                            <span class="time">24 hours</span>
+                        </div>
+                        <div class="response-item">
+                            <span class="type">Urgent Matters</span>
+                            <span class="time">Same day</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-section">
+                    <h3>Social Media</h3>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/iamtehran/" class="social-link" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                            <span>@iamtehran</span>
+                        </a>
+                        <a href="https://www.facebook.com/TehranVonGhasri" class="social-link" target="_blank">
+                            <i class="fab fa-facebook"></i>
+                            <span>TehranVonGhasri</span>
+                        </a>
+                        <a href="https://www.youtube.com/user/tehrandc" class="social-link" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                            <span>tehrandc</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Common questions about bookings and events</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How far in advance should I make a reservation?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We recommend making reservations at least 1-2 weeks in advance for regular shows, and 2-4 weeks for special events or large groups. Popular events may require even more advance notice.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I cancel or modify my reservation?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, you can cancel or modify your reservation up to 24 hours before the event. Please contact us as soon as possible if you need to make changes.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you accommodate dietary restrictions?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! Please let us know about any dietary restrictions or allergies when making your reservation, and we'll do our best to accommodate your needs.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is there a dress code for events?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Most events have a casual dress code, but some special events may have specific requirements. We'll inform you of any dress code requirements when you make your reservation.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I book Tehran for private events?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! Tehran is available for private events, corporate functions, weddings, and other special occasions. Please contact our bookings team for more information and pricing.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success/Error Messages -->
+    <div class="message-overlay" id="message-overlay">
+        <div class="message-box" id="message-box">
+            <div class="message-content">
+                <div class="message-icon success" id="message-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h3 id="message-title">Success!</h3>
+                <p id="message-text">Your reservation request has been sent successfully. We will contact you within 24 hours.</p>
+                <button class="btn btn-primary" id="message-close">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>I AM TEHRAN</h3>
+                    <p>Comedian • Spokesperson • Personality</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/iamtehran/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/TehranVonGhasri" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.youtube.com/user/tehrandc" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="comedy.html">Comedy</a></li>
+                        <li><a href="events.html">Events</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="press.html">Press</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 I Am Tehran. All Rights Reserved.</p>
+                <p>Website created by <a href="https://pimx.pages.dev" target="_blank">pimx</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
