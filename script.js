@@ -1,6 +1,9 @@
 // I Am Tehran Website JavaScript
 // Modern, interactive features and animations
 
+// Initialize page loader immediately
+initPageLoader();
+
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize all components
     initNavigation();
@@ -15,6 +18,34 @@ document.addEventListener('DOMContentLoaded', function() {
     initAccessibility();
     initVideoPlayers();
 });
+
+// Page Loader functionality
+function initPageLoader() {
+    window.addEventListener('load', function() {
+        const loader = document.getElementById('page-loader');
+        if (loader) {
+            // Add a small delay for smoother transition
+            setTimeout(function() {
+                loader.classList.add('loaded');
+                // Remove loader from DOM after transition
+                setTimeout(function() {
+                    loader.style.display = 'none';
+                }, 500);
+            }, 300);
+        }
+    });
+    
+    // Fallback: Hide loader after 5 seconds even if page isn't fully loaded
+    setTimeout(function() {
+        const loader = document.getElementById('page-loader');
+        if (loader && !loader.classList.contains('loaded')) {
+            loader.classList.add('loaded');
+            setTimeout(function() {
+                loader.style.display = 'none';
+            }, 500);
+        }
+    }, 5000);
+}
 
 // Navigation functionality
 function initNavigation() {
@@ -86,11 +117,50 @@ function initScrollEffects() {
     }, observerOptions);
 
     // Observe elements for animation with stagger effect
-    const animateElements = document.querySelectorAll('.service-card, .news-card, .product-card, .event-card, .testimonial-card, .about-content, .section-header');
+    const fadeSelectors = [
+        'section',
+        '.container > *',
+        '.service-card',
+        '.news-card',
+        '.product-card',
+        '.event-card',
+        '.testimonial-card',
+        '.about-content',
+        '.section-header',
+        '.about-text',
+        '.about-image',
+        '.services-grid > *',
+        '.news-item',
+        '.cta-content',
+        '.press-article',
+        '.video-card',
+        '.instagram-card',
+        '.videos-grid > *',
+        '.instagram-grid > *',
+        '.story-content',
+        '.timeline-item',
+        '.today-card',
+        '.academic-card',
+        '.comedy-highlight',
+        '.value',
+        '.style-card',
+        '.performance-card',
+        '.show-item',
+        '.category-card',
+        '.contact-card',
+        '.info-card',
+        '.advantage-card',
+        '.faq-item',
+        '.hero-text',
+        '.hero-image',
+        '.hero-buttons',
+        '.hero-stats'
+    ];
+    const animateElements = document.querySelectorAll(fadeSelectors.join(','));
     animateElements.forEach((el, index) => {
         el.classList.add('fade-in-scroll');
-        // Subtle delay between elements
-        el.style.transitionDelay = `${Math.min(index * 0.05, 0.3)}s`;
+        // Subtle delay between elements - reduced for faster response
+        el.style.transitionDelay = `${Math.min(index * 0.03, 0.15)}s`;
         observer.observe(el);
     });
 
@@ -160,17 +230,8 @@ function initAnimations() {
         }
     });
 
-    // Hover effects for cards
-    const cards = document.querySelectorAll('.card, .service-card, .news-card, .product-card, .event-card');
-    cards.forEach(card => {
-        card.addEventListener('mouseenter', function() {
-            this.style.transform = 'translateY(-10px) scale(1.02)';
-        });
-        
-        card.addEventListener('mouseleave', function() {
-            this.style.transform = 'translateY(0) scale(1)';
-        });
-    });
+    // Hover effects for cards - removed to prevent transition override
+    // CSS handles all hover effects now for better performance
 }
 
 // Counter animation function
@@ -813,7 +874,7 @@ function showCartNotification(productName) {
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
         z-index: 1000;
         transform: translateX(100%);
-        transition: transform 0.3s ease;
+        transition: transform 0.2s ease;
     `;
     
     document.body.appendChild(notification);
@@ -826,7 +887,7 @@ function showCartNotification(productName) {
         notification.style.transform = 'translateX(100%)';
         setTimeout(() => {
             document.body.removeChild(notification);
-        }, 300);
+        }, 200);
     }, 3000);
 }
 

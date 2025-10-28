@@ -1,8 +1,199 @@
 /* Comedy Page Styles */
+
+/* Comedy Style Section */
+.comedy-style {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #0a0a0a 0%, #0d0d0d 50%, #0a0a0a 100%);
+    position: relative;
+}
+
+.comedy-style::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 30% 50%, rgba(0, 255, 136, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 70% 80%, rgba(0, 255, 136, 0.03) 0%, transparent 40%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Featured Performances Section */
+.featured-performances {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #0a0a0a 0%, #0d0d0d 50%, #0a0a0a 100%);
+    position: relative;
+}
+
+.featured-performances::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 60% 40%, rgba(0, 255, 136, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 20% 70%, rgba(0, 255, 136, 0.03) 0%, transparent 40%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Comedy Shows Section */
+.comedy-shows {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #0a0a0a 0%, #0d0d0d 50%, #0a0a0a 100%);
+    position: relative;
+}
+
+.comedy-shows::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 50% 30%, rgba(0, 255, 136, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 80% 60%, rgba(0, 255, 136, 0.03) 0%, transparent 40%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #0a0a0a 0%, #0d0d0d 50%, #0a0a0a 100%);
+    position: relative;
+}
+
+.testimonials::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 40% 60%, rgba(0, 255, 136, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 90% 20%, rgba(0, 255, 136, 0.03) 0%, transparent 40%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Animated Background */
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes floatParticle {
+    0%, 100% {
+        transform: translate(0, 0) scale(1);
+        opacity: 0.3;
+    }
+    25% {
+        transform: translate(100px, -100px) scale(1.2);
+        opacity: 0.5;
+    }
+    50% {
+        transform: translate(-50px, -200px) scale(0.8);
+        opacity: 0.7;
+    }
+    75% {
+        transform: translate(150px, -150px) scale(1.1);
+        opacity: 0.4;
+    }
+}
+
+/* Full page animated background for Comedy */
+.home-page {
+    background: linear-gradient(-45deg, #0a0a0a, #111111, #0f0f0f, #0a0a0a);
+    background-size: 400% 400%;
+    animation: gradientShift 25s ease infinite;
+}
+
+/* Floating Particles */
+.floating-particles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.particle {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: #00ff88;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 255, 136, 0.8);
+    animation: floatParticle 20s infinite ease-in-out;
+}
+
+.particle:nth-child(1) {
+    left: 10%;
+    top: 20%;
+    animation-delay: 0s;
+    animation-duration: 15s;
+}
+
+.particle:nth-child(2) {
+    left: 70%;
+    top: 10%;
+    animation-delay: 2s;
+    animation-duration: 18s;
+}
+
+.particle:nth-child(3) {
+    left: 30%;
+    top: 70%;
+    animation-delay: 4s;
+    animation-duration: 22s;
+}
+
+.particle:nth-child(4) {
+    left: 85%;
+    top: 60%;
+    animation-delay: 1s;
+    animation-duration: 20s;
+}
+
+.particle:nth-child(5) {
+    left: 50%;
+    top: 40%;
+    animation-delay: 3s;
+    animation-duration: 16s;
+}
+
 .comedy-hero {
     padding: 80px 0;
-    background: #0a0a0a;
+    background: linear-gradient(135deg, #0a0a0a 0%, #0d0d0d 50%, #0a0a0a 100%);
     border-bottom: 1px solid #1a1a1a;
+    position: relative;
+}
+
+.comedy-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 70% 50%, rgba(0, 255, 136, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 30% 70%, rgba(0, 255, 136, 0.03) 0%, transparent 40%);
+    pointer-events: none;
+    z-index: 0;
 }
 
 .hero-stats {
@@ -254,7 +445,21 @@
 /* Comedy Philosophy */
 .comedy-philosophy {
     padding: 80px 0;
-    background: linear-gradient(180deg, #0a0a0a 0%, #000000 100%);
+    background: linear-gradient(135deg, #0a0a0a 0%, #0d0d0d 50%, #0a0a0a 100%);
+    position: relative;
+}
+
+.comedy-philosophy::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 20% 40%, rgba(0, 255, 136, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 85% 60%, rgba(0, 255, 136, 0.03) 0%, transparent 40%);
+    pointer-events: none;
+    z-index: 0;
 }
 
 .philosophy-content {
@@ -270,10 +475,6 @@
     color: #e0e0e0;
 }
 
-/* Testimonials */
-.testimonials {
-    padding: 80px 0;
-}
 
 .testimonials-grid {
     display: grid;
@@ -326,11 +527,25 @@
 /* CTA Section */
 .comedy-cta {
     padding: 80px 0;
-    background: #0a0a0a;
+    background: linear-gradient(135deg, #0a0a0a 0%, #0d0d0d 50%, #0a0a0a 100%);
     color: #e0e0e0;
     text-align: center;
     border-top: 1px solid #1a1a1a;
     border-bottom: 1px solid #1a1a1a;
+    position: relative;
+}
+
+.comedy-cta::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 50% 50%, rgba(0, 255, 136, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 70% 30%, rgba(0, 255, 136, 0.03) 0%, transparent 40%);
+    pointer-events: none;
+    z-index: 0;
 }
 
 .cta-content h2 {
