@@ -1,68 +1,34 @@
-# I Am Tehran - Dark Theme Website
+<div align="center">
 
-## 🎭 Website Redesign Complete!
+# 🌃 TEHRAN — Media & Cultural Commentary Portal 🎙️🎬
 
-### ✨ What's New:
+### Sleek Dark-Theme Cultural Platform with Integrated YouTube Streaming & Neon Aesthetics
 
-#### 🌙 **Dark Theme Design**
-- **Modern Dark Aesthetic**: Sleek black background (#0a0a0a) with subtle borders
-- **Neon Green Accent**: Vibrant #00ff88 color for highlights and CTAs
-- **No Gradients**: Clean, modern design without gradient backgrounds
-- **Professional Look**: Dark theme gives a more sophisticated, modern appearance
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+[![HTML5 & CSS3](https://img.shields.io/badge/Design-HTML5_%26_CSS3-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/)
+[![Dark Theme](https://img.shields.io/badge/Theme-Deep_Black_%26_Neon-00FF88?style=for-the-badge)](https://github.com/MOHAMMADREZAABEDINPOOR/Tehran)
+[![Read in Persian](https://img.shields.io/badge/مطالعه_به_فارسی-Persian_README-008080?style=for-the-badge)](#-توضیحات-فارسی-persian-description)
 
-#### 🎥 **YouTube Integration**
-- **Video Section**: Added dedicated YouTube videos section on homepage
-- **Embedded Videos**: Direct YouTube video embeds for easy viewing
-- **Video Cards**: Modern card design for each video with metadata
-- **Subscribe Button**: Direct link to YouTube channel
+<p align="center">
+  A modern, high-contrast dark theme media and cultural showcase website. Features neon green accents, YouTube video embed integrations, responsive cards, and clean typography.
+</p>
 
-#### 🎨 **Design Features**
-- **Hover Effects**: Cards lift and glow with neon green borders
-- **Smooth Animations**: Enhanced transitions and micro-interactions
-- **Responsive Design**: Perfect on all devices (mobile, tablet, desktop)
-- **Modern Typography**: Clean Inter font with proper contrast
+</div>
 
-### 📁 Files Updated:
-- `index.html` - Added YouTube videos section
-- `styles.css` - Complete dark theme conversion
-- `script.js` - Updated animations for dark theme
+---
 
-### 🎯 **How to Add Your YouTube Videos:**
+## ⚡ Features
+- 🌑 **Deep Black & Neon Aesthetic**: Curated color palette (`#0a0a0a` background with `#00ff88` neon accents).
+- 🎬 **Integrated YouTube Video Showcase**: Embedded responsive video cards with metadata and channel subscribe CTAs.
+- 📱 **Fluid Mobile Interactivity**: Smooth hover transformations, micro-animations, and touch optimization.
 
-1. **Replace the placeholder video URLs** in `index.html`:
-   ```html
-   <!-- Find these lines and replace with your actual YouTube video IDs -->
-   <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" ...>
-   ```
+---
 
-2. **Update video titles and descriptions**:
-   ```html
-   <h3>Your Actual Video Title</h3>
-   <p>Your video description...</p>
-   ```
+## 🇮🇷 توضیحات فارسی (Persian Description)
+### معرفی وب‌سایت تهران (Tehran)
+پلتفرم وب چندرسانه‌ای با طراحی مدرن تم تاریک (Dark Theme) و جلوه‌های نئونی جهت نمایش برنامه‌های یوتیوب، پادکست‌ها و محتوای فرهنگی.
 
-3. **Update the YouTube channel link**:
-   ```html
-   <a href="https://youtube.com/@YOUR_CHANNEL" class="btn btn-primary" target="_blank">
-   ```
+---
 
-### 🚀 **Ready to Launch!**
-
-The website now features:
-- ✅ Dark theme with neon green accents
-- ✅ YouTube video integration
-- ✅ Modern, professional design
-- ✅ Mobile-responsive layout
-- ✅ Smooth animations and interactions
-- ✅ All original functionality preserved
-
-### 🎨 **Color Scheme:**
-- **Background**: #0a0a0a (Deep Black)
-- **Cards**: #1a1a1a (Dark Gray)
-- **Borders**: #2a2a2a (Medium Gray)
-- **Text**: #e0e0e0 (Light Gray)
-- **Accent**: #00ff88 (Neon Green)
-- **Secondary Text**: #b0b0b0 (Medium Gray)
-
-The website is now ready to showcase Tehran's comedy, cultural commentary, and media presence with a modern, dark aesthetic that stands out from typical websites! 🎭✨
-
+## 📜 License
+Distributed under the **MIT License**.
