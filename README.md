@@ -1,81 +1,94 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,12,24,30&height=220&section=header&text=Tehran%20Portal&fontSize=42&fontAlignY=35&desc=%E2%9A%A1%20Modern%20Dark-Theme%20Cultural%20%26%20Media%20Platform&descFontSize=16&descAlignY=62" alt="Tehran Portal Banner" width="100%" />
+<img src="assets/readme/hero.gif" width="1200" alt="TEHRAN — rotating 3D geometry" />
 
-<a href="https://github.com/MOHAMMADREZAABEDINPOOR/Tehran">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=2800&pause=1000&color=00D2FF&center=true&vCenter=true&width=780&lines=Modern+Dark-Theme+Cultural+Commentary+%26+Media+Portal;High-Contrast+Neon+Aesthetics+with+Vanilla+HTML5%2C+CSS3+%26+JS;Embedded+YouTube+Video+Streaming+%26+Interactive+Media+Feeds;Responsive+Mobile-First+Layout+with+Smooth+Scroll+Dynamics;Bilingual+Persian+%26+English+Navigation+Architecture" alt="Typing SVG" />
-</a>
+**[English](README.md) · [فارسی](README.fa.md)**
 
-<br/>
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge&logo=opensourceinitiative)](https://opensource.org/licenses/MIT)
-[![HTML5](https://img.shields.io/badge/Frontend-HTML5_Semantic-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://html.spec.whatwg.org/)
-[![CSS3](https://img.shields.io/badge/Styling-Dark_Neon_CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://www.w3.org/Style/CSS/)
-[![JavaScript](https://img.shields.io/badge/Scripting-Vanilla_ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[![Read in Persian](https://img.shields.io/badge/مطالعه_به_فارسی-Persian_README-008080?style=for-the-badge)](#-بخش-فوقالعاده-مفصل-و-جامع-به-زبان-فارسی-persian-documentation)
-
-<p align="center">
-  <b>Tehran</b> is a cultural commentary, media streaming, and digital publication platform celebrating urban aesthetics, contemporary art, and independent voice. Designed with a high-contrast neon dark theme, embedded video feeds, and zero external framework bloat.
-</p>
-
-[Project Overview](#-project-overview) •
-[Directory Anatomy](#-exhaustive-directory--file-anatomy) •
-[Quick Start](#-quick-start) •
-[توضیحات فارسی](#-بخش-فوقالعاده-مفصل-و-جامع-به-زبان-فارسی-persian-documentation) •
-[License](#-license)
+<img src="assets/readme/identity.svg" width="1200" alt="web / English and Persian documentation" />
 
 </div>
 
----
+# TEHRAN
 
-## ⚡ Project Overview
+A static cultural/media website with multiple editorial pages, embedded video content and a dark visual theme.
 
-A fast, responsive web portal delivering cultural essays, visual podcasts, and urban commentary with zero framework dependencies.
+[GitHub](https://github.com/MOHAMMADREZAABEDINPOOR/Tehran) · [PIMX / Profile](https://github.com/MOHAMMADREZAABEDINPOOR) · [Static artwork](assets/readme/hero.png)
 
----
+## Features
 
-## 📂 Exhaustive Directory & File Anatomy
+- Home, press, comedy, events and contact pages
+- Video embeds and video-configuration notes
+- Separate page styles and a shared script
+- Responsive HTML/CSS presentation
 
-```
-d:/code/Mr.Amirhosseini/
-│
-├── index.html                       # Homepage layout, hero banner & featured video embeds
-├── index.css                        # Cyberpunk neon dark mode typography and layout rules
-├── about.html                       # Publication editorial manifesto and author bio
-├── about.css                        # Biography section styling
-├── about.js                         # Dynamic about page navigation controller
-├── contact.html                     # Contact and feedback portal
-├── contact.css                      # Form styling
-└── contact.js                       # Client-side form validation
-```
+## Stack
 
----
+| Tool | Version / source |
+|---|---|
+| HTML / CSS / JavaScript | `static files` |
 
-## 🚀 Quick Start
+## Getting started
+
+A modern browser; Python is optional for the local HTTP server.
 
 ```bash
 git clone https://github.com/MOHAMMADREZAABEDINPOOR/Tehran.git
 cd Tehran
 
-python -m http.server 8080
+python -m http.server 8000
 ```
 
+## Configuration
+
+No standard environment template is defined. Standalone exercises need no external configuration; inspect any service constants or paths in the source before running.
+
+## Usage
+
+Open index.html through HTTP, then explore editorial pages. Update embedded-video identifiers using the included video notes.
+
+## Project structure
+
+| Path | Role |
+|---|---|
+| [`assets/`](assets/) | Brand/media/README assets |
+| [`about.html`](about.html) | Project entry/configuration file |
+| [`comedy.html`](comedy.html) | Project entry/configuration file |
+| [`contact.html`](contact.html) | Project entry/configuration file |
+| [`events.html`](events.html) | Project entry/configuration file |
+| [`index.html`](index.html) | Project entry/configuration file |
+| [`press-detail-2.html`](press-detail-2.html) | Project entry/configuration file |
+| [`press-detail-3.html`](press-detail-3.html) | Project entry/configuration file |
+| [`press-detail-4.html`](press-detail-4.html) | Project entry/configuration file |
+| [`press-detail.html`](press-detail.html) | Project entry/configuration file |
+| [`press.html`](press.html) | Project entry/configuration file |
+| [`shop.html`](shop.html) | Project entry/configuration file |
+
+## Commands and checks
+
+No automated test command is declared in a manifest. Verify behavior through a local example run.
+
+## Deployment
+
+Publish the directory to an HTTPS static host and verify file paths and external links.
+
+## Limitations
+
+Embedded media requires network access and depends on the hosting provider. Shop/contact pages in a static snapshot do not imply a checkout or messaging backend.
+
+## Troubleshooting
+
+- Missing packages: install dependencies using the project’s package manager.
+- API/network failure: check the configured origin, provider and hosting bindings.
+- Old assets: rebuild when a build script exists, then clear the browser cache.
+
+## Contributing
+
+Create a focused branch, verify the affected behavior and explain the change clearly. Keep private data, build outputs and local databases out of commits.
+
+## License
+
+No repository-level license file is included in this snapshot. Public visibility alone does not grant reuse rights; contact the repository owner for terms.
+
 ---
 
-## 🇮🇷 بخش فوق‌العاده مفصل و جامع به زبان فارسی (Persian Documentation)
-
-### ۱. معرفی پورتال فرهنگی و رسانه‌ای تهران
-پروژه **Tehran** یک پلتفرم رسانه‌ای، وبلاگ فرهنگی و پورتال چندرسانه‌ای با استایل نئونی و تم تیره (Dark Mode) است که با هدف انتشار پادکست‌های تصویری، مقالات فرهنگی و گفتگوهای مستقل شهری به زبان فارسی و با استفاده از وب مدرن توسعه یافته است.
-
----
-
-## 📜 License
-
-Distributed under the **MIT License**.
-
----
-
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,12,24,30&height=120&section=footer" alt="Footer" width="100%" />
-<sub>Architected by <a href="https://github.com/MOHAMMADREZAABEDINPOOR"><b>MOHAMMADREZA ABEDINPOOR</b></a>.</sub>
-</div>
+Part of **PIMX** · Documentation in English and Persian.
